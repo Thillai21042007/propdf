@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProPDF – Free PDF Converter</title>
+
+    <meta name="description" content="ProPDF is a free online tool to convert images to PDF easily. Fast, secure, and works on mobile and PC.">
+    <meta name="keywords" content="image to pdf, pdf converter, free pdf tool, online pdf converter">
+    <meta name="author" content="ProPDF">
+
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKKB84HTL3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKKB84HTL3');
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>ProPDF</h1>
+        <p class="subtitle">Image to PDF Converter</p>
+
+        <div class="upload-box" id="uploadBox">
+            <input type="file" id="fileInput" accept="image/*" multiple hidden>
+            <p>Drag & Drop image here</p>
+            <span>or click to upload</span>
+        </div>
+
+        <div class="preview" id="preview">
+            <img id="previewImage" alt="">
+        </div>
+
+        <button id="convertBtn" disabled>Convert to PDF</button>
+        <button id="resetBtn">Reset</button>
+
+        <p style="margin-top:20px; font-size:0.85rem;">
+            <a href="privacy.html" style="color:#38bdf8;">Privacy Policy</a>
+        </p>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
